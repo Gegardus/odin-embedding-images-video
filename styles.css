@@ -1,0 +1,42 @@
+
+*{
+    border: 1px solid grey;
+    color: whitesmoke;
+    background-color: black;
+}
+
+header {
+    display:flex;
+    justify-content: space-around;
+}
+
+.home {
+    display: flex;    
+}
+
+container {
+    width: 1000px;
+    height: auto;
+}
+
+main {
+    width: 1000px;
+    height: auto;
+}
+
+main, aside {
+    display: inline-block;
+       
+}
+
+.sidebar {
+    background-image: url("images/Snapshot_2.png");
+    width: 400px;
+    height: 655px;
+}
+
+.comments {
+    background-image: url("images/Snapshot_1.png");
+    width: 1500px;
+    height: 680px;
+}

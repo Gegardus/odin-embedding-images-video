@@ -2,12 +2,16 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Youtube Front Page</title>
+    <title>Youtube Front Page</title>    
+    <link rel="stylesheet" href="styles.css"/>
   </head>
-  <body>
+  <body>  
     <header>
-      <button class="menu-btn"><img src="images/main-menu.svg" alt="menu"></button>
-      <button class="home-btn"><img src="images/youtube.svg" alt="home-button"><h1>YouTube</h1></button>
+    <div class="home">
+      <button class="menu-btn"><img src="images/main-menu.svg"></button>
+      <button class="home-btn"><img src="images/youtube.svg" ></button>
+      <p>YouTube</p>
+    </div>
       <div class="search">
         <input class="search-input" type="text" placeholder="Search">
         <button class="search-btn" title="Search"><img src="images/magnify.svg" alt="magnifier"></button>
@@ -17,11 +21,11 @@
         <button title="Create"><img src="images/create.svg" alt="create"></button>
         <button title="YouTube apps"><img src="images/apps.svg" alt="apps"></button>
         <button title="Notofications"><img src="images/alert.svg" alt="notifications"></button>
-        <button><img src="images/sampo.jpg" alt="no avatar"></button>
+        <button><img src="images/HeaderResized.jpg" alt="no avatar"></button>
       </div>
-    </header>
-    <main>
-      <container>
+    </header>   
+    <container>
+    <main>      
       <div class="video-player">   
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cqy8315w6Js" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -39,8 +43,7 @@
         <button title="Share"><img src="images/grey-share.svg">Share</button>
         <button title="Save"><img src="images/grey-save.svg">Save</button>
         <button title="Report"><img src="images/grey-mini-menu.svg"></button>
-      </div>
-    </container>
+      </div>    
     <channel>
       <div class="channel-owner">
         <ul>
@@ -53,10 +56,11 @@
         <p>Here's your monthly dose of humor as we look back at the awesome Gags produced by Just For Laughs!</p>
       </div>
     </channel>
-    </main>
-    <aside>
-      <button>Up next</button>
+    </main>    
+    <aside>     
+      <div class="sidebar"></div>
     </aside>
+  </container>
     <footer>
       <div>
         <p>888 Comments</p>
@@ -64,6 +68,7 @@
         <input type="text" placeholder="Add a public comment...">
         <button>CANCEL</button>
         <button>COMMENT</button>
+        <div class="comments"></div>
       </div>
     </footer>
   </body>
