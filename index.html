@@ -4,5 +4,67 @@
     <meta charset="UTF-8" />
     <title>Youtube Front Page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <button class="menu-btn"><img src="images/main-menu.svg" alt="menu"></button>
+      <button class="home-btn"><img src="images/youtube.svg" alt="home-button"><h1>YouTube</h1></button>
+      <div class="search">
+        <input class="search-input" type="text" placeholder="Search">
+        <button class="search-btn" title="Search"><img src="images/magnify.svg" alt="magnifier"></button>
+        <button class="voice-search" title="Search with your voice"><img src="images/microphone.svg" alt="microphone"></button>
+      </div>
+      <div class="user-ortions">
+        <button title="Create"><img src="images/create.svg" alt="create"></button>
+        <button title="YouTube apps"><img src="images/apps.svg" alt="apps"></button>
+        <button title="Notofications"><img src="images/alert.svg" alt="notifications"></button>
+        <button><img src="images/sampo.jpg" alt="no avatar"></button>
+      </div>
+    </header>
+    <main>
+      <container>
+      <div class="video-player">   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cqy8315w6Js" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h3>2021 Top 5 Just For Laughs Gags</h3>
+      </div>
+      <div class="video-info">
+        <p>5,400,704 views •  31 Jan 2021</p>
+      </div>
+      <div class="user-options">
+        <button title="I like this"><img src="images/grey-like.svg">37K</button>
+        <button title="I dislike this"><img src="images/grey-dislike.svg">3.7K</button>
+        <button title="Share"><img src="images/grey-share.svg">Share</button>
+        <button title="Save"><img src="images/grey-save.svg">Save</button>
+        <button title="Report"><img src="images/grey-mini-menu.svg"></button>
+      </div>
+    </container>
+    <channel>
+      <div class="channel-owner">
+        <ul>
+          <li><p4>Samuel Lewis</p4></li>
+          <li><p5>750K subscribers</p5></li>
+        </ul>
+        <button class="sbcr-btn">SUBSCRIBE</button>
+      </div>
+      <div class="discription">
+        <p>Here's your monthly dose of humor as we look back at the awesome Gags produced by Just For Laughs!</p>
+      </div>
+    </channel>
+    </main>
+    <aside>
+      <button>Up next</button>
+    </aside>
+    <footer>
+      <div>
+        <p>888 Comments</p>
+        <button title="Sort comments"><img src="images/sort.svg">SORT BY</button>
+        <input type="text" placeholder="Add a public comment...">
+        <button>CANCEL</button>
+        <button>COMMENT</button>
+      </div>
+    </footer>
+  </body>
 </html>
