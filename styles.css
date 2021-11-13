@@ -1,18 +1,115 @@
 
 *{
-    border: 1px solid grey;
+  border: 1px solid gray;
     color: whitesmoke;
     background-color: black;
 }
 
 header {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-around;  
+    background-color: #282828fa; 
 }
 
 .home {
-    display: flex;    
+    display: flex;
+    justify-content: space-between;
 }
+
+.menu-btn {
+    margin-right: 2.4rem;    
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgb(49, 49, 49);
+  }
+
+  .home-btn {
+    margin-right: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 1px solid rgb(49, 49, 49);    
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .search {
+    width: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 630px) {
+    .search-bar {
+      width: 0;
+      visibility: hidden;
+    }
+
+    .user-options{
+        margin-right: 1.5rem;
+      }
+    }
+    
+    .search-input {
+      width: 100%;
+      height: 32px;
+      padding: 1rem;
+      margin-left: 4rem;
+      font-size: 1.3rem;
+      background-color: rgba(0, 0, 0, 0.55);
+      border: 1px solid rgb(49, 49, 49);
+    }
+    
+    .search-btn {
+      min-width: 65px;
+      height: 32px;     
+      margin-right: 4rem;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border: 1px solid rgb(49, 49, 49);
+      background-color: #393939;
+    }
+    
+    .voice-search {
+      width: 20px;   
+      margin-right: 10rem;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border: 1px solid rgb(49, 49, 49);
+      background-color: #393939;
+    }
+    
+    .user-options{
+      width: 20;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 1rem;
+      margin-right: 4rem;
+      border: 1px solid rgb(49, 49, 49);
+      background-color: #393939;
+      border-radius: 2px;
+     
+    }
+
+    .user-options button{
+        margin-right: 20px;
+        background-color: rgba(0, 0, 0, 0.55);
+        border: 1px solid rgb(49, 49, 49);
+    }
+    
+    .user-options {
+      margin-right: 2.4rem;
+      height: 40px;    
+    }     
+ 
+   
 
 container {
     width: 1000px;
@@ -22,21 +119,55 @@ container {
 main {
     width: 1000px;
     height: auto;
+    margin-left: 30px;
 }
 
 main, aside {
-    display: inline-block;
+    display: inline-block;   
+    flex-wrap: wrap;
+    margin-left: 25px;
        
 }
 
 .sidebar {
     background-image: url("images/Snapshot_2.png");
     width: 400px;
-    height: 655px;
+    height: 770px;
+}
+
+.comments-background {
+    background-image: url("images/Snapshot_3.1.png");
+    width: 1430px;
+    height: 720px;
+    margin-left: 20px;
 }
 
 .comments {
-    background-image: url("images/Snapshot_1.png");
-    width: 1500px;
-    height: 680px;
+    margin-left: 20px;
+    display: flex;
+    flex: row;
+    justify-content: space-around;
 }
+
+.options {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+
+.channel-owner {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.video-player {
+    width: fit-content;
+    height: 500px;
+}
+
+
