@@ -1,85 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Youtube Front Page</title>    
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>  
-    <header>
-    <div class="home">
-      <button class="menu-btn"><img src="images/main-menu.svg"></button>
-      <button class="home-btn"><img src="images/youtube.svg" ></button>
-      <h4>YouTube</h4>
-    </div>
-      <div class="search">
-        <input class="search-input" type="text" placeholder="Search">
-        <button class="search-btn" title="Search"><img src="images/magnify.svg" alt="magnifier"></button>
-        <button class="voice-search" title="Search with your voice"><img src="images/microphone.svg" alt="microphone"></button>
-      </div>
-      <div class="user-options">
-        <button title="Create"><img src="images/create.svg" alt="create"></button>
-        <button title="YouTube apps"><img src="images/apps.svg" alt="apps"></button>
-        <button title="Notofications"><img src="images/alert.svg" alt="notifications"></button>
-        <button><img src="images/man1.png" alt="no avatar"></button>
-      </div>
-    </header>   
-    <container>
-    <main>      
-      <div class="video-player">   
+<head>
+  <meta charset="UTF-8">
+  <title>Gridle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div class="container">
+  <div class="item1">
+    <div id="left-bar">
+            <button>
+                <img src="images/main-menu.svg" alt="menu" class="bar-icon">
+            </button>
+            <a href="https://www.youtube.com">
+            <button id="youtube-btn">
+                <img id="youtube-logo" src="images/youtube.svg" alt="youtube" class="bar-icon">
+                        <h5>YouTube</h5>
+            </button>
+            </a>
+        </div>
+
+        <div class="input-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        <button id="search-btn">
+            <img title="Search" src="images/magnify.svg" alt="magnifier" class="bar-icon">
+        </button>
+        <button id="mic-btn">
+            <img title="Search with your voice" src="images/microphone.svg" alt="microphone" class="bar-icon">
+        </button>
+
+        <div id="right-bar">
+            <button class="right-bar-btn">
+                <img title="Create" src="images/create.svg" alt="creat" class="bar-icon">
+            </button>
+            <button class="right-bar-btn">
+                <img title="YouTube apps" src="images/apps.svg" alt="apps" class="bar-icon">
+            </button>
+            <button class="right-bar-btn">
+                <img title="Notofications" src="images/alert.svg" alt="notifications" class="bar-icon">
+            </button>
+            <button id="profile-btn" class="right-bar-btn">
+                <img src="images/man1.png" alt="no avatar" class="bar-icon">               
+            </button>
+        </div>
+  </div>
+  <div class="item2"></div>
+  <div class="item3">
+ 
+<div class="video-player">   
         <iframe width="997" height="500" src="https://www.youtube.com/embed/cqy8315w6Js" title="YouTube video player" 
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
       </div>
+      
       <div class="video-info">
-        <h3>2021 Top 5 Just For Laughs Gags</h3>
+        <h4>2021 Top 5 Just For Laughs Gags</h4>
       </div>
+      
       <section class="options">
       <div class="video-info">
-        <p>5,400,704 views •  31 Jan 2021</p>
+        <p>5,400,704 views • 31 Jan 2021</p>
       </div>
       <div class="user-options">
-        <button title="I like this"><img src="images/grey-like.svg">37K</button>
-        <button title="I dislike this"><img src="images/grey-dislike.svg">3.7K</button>
-        <button title="Share"><img src="images/grey-share.svg">Share</button>
-        <button title="Save"><img src="images/grey-save.svg">Save</button>
+        <button title="I like this"><img src="images/grey-like.svg"></button><p>37K</p>
+        <button title="I dislike this"><img src="images/grey-dislike.svg"></button><p>3.7K</p>
+        <button title="Share"><img src="images/grey-share.svg"></button><p>Share</p>
+        <button title="Save"><img src="images/grey-save.svg"></button><p>Save</p>
         <button title="Report"><img src="images/grey-mini-menu.svg"></button>
-      </div>   
-    </section> 
-    <channel>
+         </div>   
+    </section>   
+
+      <channel>
       <div class="channel-owner">
         <ul>
           <li><p4>Samuel Lewis</p4></li>
           <li><p5>750K subscribers</p5></li>
         </ul>
-        <button class="sbcr-btn">SUBSCRIBE</button>
+        <button class="sbcr-btn"><strong>SUBSCRIBE</strong></button>
       </div>
       <div class="discription">
         <p>Here's your monthly dose of humor as we look back at the awesome Gags produced by Just For Laughs!</p>
       </div>
     </channel>
-    </main>    
-    <aside>     
-      <div class="sidebar"></div>
-    </aside>
-  </container>
-    <footer>
-      <div>
+        
+       <div>
         <section class="comments">
         <div>
         <nav class="commentators">
         <p>888 Comments</p>
-        <button title="Sort comments"><img src="images/sort.svg">SORT BY</button>
+        <button title="Sort comments">
+            <img src="images/sort.svg">           
+        </button> 
+        <h5>SORT BY</h5>
       </nav>
       <nav class="my-comment">
         <img src="images/man1.png">
         <input type="text" placeholder="Add a public comment...">
       </nav>
-      </div>
-        <div class="merge"><img src="images/Snapshot_20 (8).png"></div>      
+      </div>          
       </section>
-        <div class="comments-background"></div>
       </div>
-    </footer>
-  </body>
+
+  </div>
+  <div class="item4"></div>
+</div>
+</body>
 </html>
